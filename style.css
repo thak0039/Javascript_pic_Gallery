@@ -9,7 +9,8 @@
     padding-top: 2rem;
 }
 
-.value-div {
+.value-div,
+.get-odd-even {
     text-align: center;
 }
 
@@ -20,8 +21,17 @@
     border-color: gray;
 }
 
-.btnimage img {}
-
 .btnimage :hover {
     transform: scale(1.5);
+}
+
+#Idfornumber {
+    padding: 1rem;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.get-odd-even button {
+    padding: 20px;
+    cursor: pointer;
 }
