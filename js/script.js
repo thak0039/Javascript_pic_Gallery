@@ -24,3 +24,33 @@ function GetoOddEvenNumber() {
     }
 
 }
+
+function getPluse() {
+
+    let value1 = document.getElementById('num1').value;
+    let value2 = document.getElementById('num2').value;
+    let value3 = 0;
+    value3 = value1 += value2;
+
+    document.getElementById('ans').innerHTML = value3;
+
+
+}
+
+function getSubstraction() {
+    let value1 = document.getElementById('num1').value;
+    let value2 = document.getElementById('num2').value;
+    document.getElementById('ans').innerHTML = value1 - value2
+}
+
+function getMultification() {
+    let value1 = document.getElementById('num1').value;
+    let value2 = document.getElementById('num2').value;
+    document.getElementById('ans').innerHTML = value1 * value2;
+}
+
+function getDivisition() {
+    let value1 = document.getElementById('num1').value;
+    let value2 = document.getElementById('num2').value;
+    document.getElementById('ans').innerHTML = value1 / value2;
+}
