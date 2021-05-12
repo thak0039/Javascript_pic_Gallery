@@ -29,8 +29,8 @@ function getPluse() {
 
     let value1 = document.getElementById('num1').value;
     let value2 = document.getElementById('num2').value;
-    let value3 = 0;
-    value3 = value1 += value2;
+
+    value3 = parseInt(value1) + parseInt(value2);
 
     document.getElementById('ans').innerHTML = value3;
 
