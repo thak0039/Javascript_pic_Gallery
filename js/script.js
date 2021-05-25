@@ -25,32 +25,57 @@ function GetoOddEvenNumber() {
 
 }
 
-function getPluse() {
+// function getPluse() {
 
-    let value1 = document.getElementById('num1').value;
-    let value2 = document.getElementById('num2').value;
+//     let value1 = document.getElementById('num1').value;
+//     let value2 = document.getElementById('num2').value;
 
-    value3 = parseInt(value1) + parseInt(value2);
+//     value3 = parseInt(value1) + parseInt(value2);
 
-    document.getElementById('ans').innerHTML = value3;
+//     document.getElementById('ans').innerHTML = value3;
 
 
-}
+// }
 
-function getSubstraction() {
-    let value1 = document.getElementById('num1').value;
-    let value2 = document.getElementById('num2').value;
-    document.getElementById('ans').innerHTML = value1 - value2
-}
+// function getSubstraction() {
+//     let value1 = document.getElementById('num1').value;
+//     let value2 = document.getElementById('num2').value;
+//     document.getElementById('ans').innerHTML = value1 - value2
+// }
 
-function getMultification() {
-    let value1 = document.getElementById('num1').value;
-    let value2 = document.getElementById('num2').value;
-    document.getElementById('ans').innerHTML = value1 * value2;
-}
+// function getMultification() {
+//     let value1 = document.getElementById('num1').value;
+//     let value2 = document.getElementById('num2').value;
+//     document.getElementById('ans').innerHTML = value1 * value2;
+// }
 
-function getDivisition() {
-    let value1 = document.getElementById('num1').value;
-    let value2 = document.getElementById('num2').value;
-    document.getElementById('ans').innerHTML = value1 / value2;
+// function getDivisition() {
+//     let value1 = document.getElementById('num1').value;
+//     let value2 = document.getElementById('num2').value;
+//     document.getElementById('ans').innerHTML = value1 / value2;
+// }
+
+
+
+function makecalculater(ope) {
+    let value1 = parseInt(document.getElementById('num1').value);
+    let value2 = parseInt(document.getElementById('num2').value);
+    switch (ope) {
+
+        case '+':
+            document.getElementById('ans').innerHTML = value1 + value2;
+            break;
+        case '-':
+            document.getElementById('ans').innerHTML = value1 - value2;
+            break;
+        case '*':
+            document.getElementById('ans').innerHTML = value1 * value2;
+            break;
+        case '/':
+            document.getElementById('ans').innerHTML = value1 / value2;
+            break;
+
+    }
+
+
 }
